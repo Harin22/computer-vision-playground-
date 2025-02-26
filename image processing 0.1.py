@@ -23,7 +23,8 @@ lab = cv.cvtColor(resized, cv.COLOR_BGR2LAB)
 cv.imshow("HSV", hsv)
 cv.imshow("LAB", lab)
 
-
+contrasting = cv.convertScaleAbs(image, alpha = 1.5, beta = 0)
+cv.imshow("contrast image", contrasting)
 
 
 #Wait for a key press and close the windows
